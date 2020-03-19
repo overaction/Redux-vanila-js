@@ -931,7 +931,7 @@ function reducer() {
 var store = (0, _redux.createStore)(reducer); // 6. 함수의 상태가 업데이트 될 때마다 호출되는 render 함수 작성
 
 var render = function render() {
-  var state = store.getState();
+  var state = store.getState(); //현재상태 불러옴
 
   if (state.toggle) {
     // toggle.active 활성화

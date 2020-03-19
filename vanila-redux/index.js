@@ -51,7 +51,7 @@ const store = createStore(reducer);
 
 // 6. 함수의 상태가 업데이트 될 때마다 호출되는 render 함수 작성
 const render = () => {
-    const state = store.getState();
+    const state = store.getState(); //현재상태 불러옴
     if(state.toggle) {
         // toggle.active 활성화
         divToggle.classList.add('active');
